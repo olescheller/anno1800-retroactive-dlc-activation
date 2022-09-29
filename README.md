@@ -3,7 +3,7 @@ Description of how to retroactively activate one or more Anno 1800 DLCs in a sav
 
 # Steps
 1. Get the latest release of RDA Explorer here: https://github.com/lysannschlegel/RDAExplorer/releases
-   - Load the desired Anno 1800 save game into RDA Explorer 
+   - Load the desired Anno 1800 save game into RDA Explorer (Save games are stored in `%userprofile%\Documents\Anno 1800\accounts`)
    - Export gamesetup.a7s to a local folder
 2. Use a zlib library (e.g. Python zlib.decompress) to decompress `gamesetup.a7s` to ` gamesetup_zlib_decompressed`
 3. Clone https://github.com/anno-mods/FileDBReader.git and open it in Visual Studio (the Community version is free).
@@ -21,6 +21,7 @@ Description of how to retroactively activate one or more Anno 1800 DLCs in a sav
       <DLC>D7410600</DLC>
       <DLC>E4410600</DLC>
       <DLC>E5410600</DLC>
+      <DLC>82610000</DLC> <!--Reich der Lüfte-->
     </ActiveDLCs>```
 5. Compress the xml file using FileDBReader: `compress -f gamesetup_zlib_decompressed.xml -o fdbr -c 2`
 6. Use a zlib library (e.g. Python zlib.compress) to compress `gamesetup_zlib_decompressed.fdbr` to `gamesetup.a7s`
