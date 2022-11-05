@@ -11,7 +11,7 @@ Description of how to retroactively activate one or more Anno 1800 DLCs in a sav
 4. Open the xml file and find the section `<ActiveDLCs>`. Add the desired DLCs to the list of DLCs and update the count accordingly.    
     Full list of DLCs as of Sept. 19th, 2022: ``` <ActiveDLCs>
       <count>0A00000000000000</count>
-      <DLC>B8410600</DLC>
+      <DLC>B8410600</DLC> <!--Sunken Treasures DLC-->
       <DLC>B9410600</DLC>
       <DLC>BA410600</DLC>
       <DLC>E3410600</DLC>
