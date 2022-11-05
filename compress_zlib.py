@@ -6,5 +6,6 @@ def main():
             contents = f.read()
             compressed = zlib.compress(contents, level=9)
             fu.write(compressed)
+            fu.write(b"xda030000000001f00000")
 
 main()

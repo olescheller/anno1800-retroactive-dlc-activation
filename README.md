@@ -25,6 +25,5 @@ Description of how to retroactively activate one or more Anno 1800 DLCs in a sav
     </ActiveDLCs>```
 5. Compress the xml file using FileDBReader: `compress -f gamesetup_zlib_decompressed.xml -o fdbr -c 2`
 6. Use a zlib library (e.g. Python zlib.compress) to compress `gamesetup_zlib_decompressed.fdbr` to `gamesetup.a7s`
-7. Use a binary editor (e.g. [WinMerge](https://winmerge.org/downloads/)) to open `gamesetup.a7s` and paste `x<bh:da><bh:03><bh:00><bh:00><bh:00><bh:00><bh:01><bh:f0>&<bh:00><bh:00>` at the very end of the file and save it.
 8. Use RDA Explorer to import the new `gamesetup.a7s` into your save game and save the file.
 9. Run Anno 1800 and load that explicit save game.
