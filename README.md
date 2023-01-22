@@ -5,7 +5,7 @@ Description of how to retroactively activate one or more Anno 1800 DLCs in a sav
 2. Download this repository, open command line into `v2`
 3. Copy a Anno 1800 save game file you want additional DLCs activated into the `v2` directory. Save games can be found in `%userprofile%\Documents\Anno 1800\accounts`.
 4. Edit the script `main.py` in line 27 and put in the file name of the save game file.
-5. Edit the script `main.py` in line 30 and put one more many DLCs that you want activated. See line 10 for possible values. The value must have `DLC.` as a prefix (as shown in the existing code). Save file.
+5. Edit the script `main.py` in line 30 and put in one or multiple DLCs that you want activated. See line 11-23 for possible values. The value must have `DLC.` as a prefix (as shown in the existing code). Save file.
 6. Run `python main.py`
 7. A file `gamesetup.a7s` is created in the same folder `v2`
 8. Get the latest release of RDA Explorer here: https://github.com/lysannschlegel/RDAExplorer/releases and use it to load your save game from `v2`. Remove the existing gamesetup.a7s inside RDA Explorer (Right click - Delete). Add the generated `gamesetup.a7s` (Right click - Add files ...). Then save it (File - Save).
