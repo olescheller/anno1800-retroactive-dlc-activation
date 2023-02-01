@@ -1,6 +1,16 @@
 # anno1800-retroactive-dlc-activation
 Description of how to retroactively activate one or more Anno 1800 DLCs in a savegame.
-# Steps (new)
+
+# GUI Application
+Download the built program from [here](https://drive.google.com/file/d/1-7hmaUzS1y1tF3Al8Xh1TBgb_QYHuaj6/view?usp=sharing). Or build it yourself using Python >= 3.11:
+```
+pip install pyinstaller
+.\build.ps1
+```
+
+# BELOW ARE DEPRECATED DESCRIPTIONS
+These are no longer needed if your save game is compatible with the GUI version above.
+# Steps (v2)
 1. Install most recent version of Python 3 from https://www.python.org/downloads/
 2. Download this repository, open command line into `v2`
 3. Copy a Anno 1800 save game file you want additional DLCs activated into the `v2` directory. Save games can be found in `%userprofile%\Documents\Anno 1800\accounts`.

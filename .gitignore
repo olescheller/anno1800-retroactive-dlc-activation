@@ -1,2 +1,5 @@
 gamesetup*
 *.a7s
+dist
+build
+**/__pycache__/**
