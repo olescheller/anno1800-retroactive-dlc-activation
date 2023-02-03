@@ -7,6 +7,10 @@ Download the built program from [here](https://drive.google.com/file/d/1-7hmaUzS
 pip install pyinstaller
 .\build.ps1
 ```
+Alternatively you can run the gui.py script directly from cmd.exe
+```
+set PYTHONPATH=%cd% && python a1800da/gui.py
+```
 
 # BELOW ARE DEPRECATED DESCRIPTIONS
 These are no longer needed if your save game is compatible with the GUI version above.
